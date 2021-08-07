@@ -1,14 +1,5 @@
 
-target/classes/application.properties
-
-target/classes/com/rank/interactive/app/Application.class
-
-target/classes/com/rank/interactive/app/model/Logs.class
-
-target/classes/com/rank/interactive/app/model/Player.class
-
-target/classes/com/rank/interactive/app/model/Transaction.class
 
 .settings/
-
+.target/
 .classpath
