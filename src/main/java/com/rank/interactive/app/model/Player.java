@@ -24,9 +24,11 @@ public class Player {
 	private Date createdDate;
 	@Column(name = "updatedDate")
 	private Date updatedDate;
-	
+
 	@Column(unique = true)
 	private String username;
+
+	private int promoCount = 0;
 
 	public Player() {
 		super();
@@ -64,8 +66,6 @@ public class Player {
 		this.password = password;
 	}
 
-	
-
 	public String getUsername() {
 		return username;
 	}
@@ -90,5 +90,12 @@ public class Player {
 		this.updatedDate = updatedDate;
 	}
 
-	
+	public int getPromoCount() {
+		return promoCount;
+	}
+
+	public void setPromoCount(int promoCount) {
+		this.promoCount = promoCount;
+	}
+
 }

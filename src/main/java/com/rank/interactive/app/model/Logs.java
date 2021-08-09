@@ -19,14 +19,13 @@ public class Logs {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	private String action;
-	private String playUsername;
+	private String username;
 	private String result;
-
 	@CreationTimestamp
 	private Date createdDate;
 	@Column(name = "updatedDate")
 	private Date updatedDate;
-
+	
 	public long getId() {
 		return id;
 	}
@@ -43,12 +42,12 @@ public class Logs {
 		this.action = action;
 	}
 
-	public String getPlayUsername() {
-		return playUsername;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setPlayUsername(String playUsername) {
-		this.playUsername = playUsername;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getResult() {
